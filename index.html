@@ -21,142 +21,92 @@
             width: 350px;
             margin: auto;
         }
-
-        .wrap > h1 {
-            background-color: pink;
+        h1 {
+            font-size: 16px;
+            padding: 16px;
             color: white;
-            
-            width: 330px;
-            height: 50px;
-            margin-top: 50px;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            padding-left: 20px;
-
+            background-color: pink;
+            font-weight: 500;
         }
-
         .pic {
-            margin-top: 25px;
-        }
-
-        .pic > span {
             color: pink;
+            letter-spacing: 3px;
             
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            
-        }
 
+            width: 250px;
+            margin: 30px auto;
+        }
+        .pic > img {
+            width: 250px;
+            border: 3px solid pink;
+            margin: 10px;
+        }
         .name {
-            color: pink;
-            
-            font-size: 25px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-
-            margin-top: 20px;
-
+            width: 200px;
+            margin: auto;
+            font-size: 24px;
+            font-weight: 500;
             border-top: 1px solid pink;
             border-bottom: 1px solid pink;
-            
-            width: 230px;
-            
+
+            color: pink;
             text-align: center;
-            font-size: 22px;
-            font-weight: 500;
-            line-height: 1.5;
-
-            margin-left: 60px;
         }
-
         .main {
             background-color: pink;
-
+            color: white;
             margin-top: 30px;
-
+            margin-bottom: 30px;
+            padding: 20px;
         }
-
-        .main > span {
-            color: white;
+        .title {
             font-size: 20px;
-
+            text-align: center;
+        }
+        .msg {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            line-height: 30px;
+        }
+        .place {
+            text-align: center;
+        }
+        .bottom {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-
-            padding-top: 20px;
-            padding-bottom: 32px;
         }
-
-        .main > p {
-            color: white;
-            padding-left: 15px;
-        }
-
-        .main > div {
-            color: white;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-
-            padding-top: 30px;
-            padding-bottom: 15px;
-        }
-
-        .bottom > span{
+        .bottom > p {
             color: pink;
-
-            padding-top: 25px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            font-weight: 500;
+            margin-bottom: 10px;
         }
-
-        .bottom > div {
-            border: 1px solid #7c7c7c;
-
-            color: #626262;
-
-            padding-left: 4px;
-            margin-top: 10px;
-
-            width: 270px;
-
-           margin-left: 40px;
+        .bottom > input {
+            width: 250px;
+            margin-bottom: 10px;
         }
-
-        .bottom > div > p {
-            padding-bottom: 40px;
+        .bottom > textarea {
+            width: 250px;
+            height: 100px;
+            margin-bottom: 10px;
         }
-
         .bottom > button {
+            width: 150px;
+            height: 40px;
+
+            border-radius: 8px;
+            border: none;
             background-color: pink;
             color: white;
 
-            border: none;
-            border-radius: 8px;
+            margin-bottom: 30px;
 
             cursor: pointer;
-
-            margin-top: 13px;
-
-            height: 40px;
-            width: 145px;
-            margin-left: 110px;
         }
     </style>
 </head>
@@ -164,34 +114,35 @@
     <div class="wrap">
         <h1>영희와 철수의 첫 시작을 축하해주세요</h1>
         <div class="pic">
-            <span>save the date</span>
-            <img src:\api\v2\notion\image>
+            <h2>Save The Date</h2>
+            <img src="wedding.png">
             <span>12.31.SUNDAY.PM.12:30</span>
         </div>
         <div class="name">
-            김영희&이철수
+            김영희 & 이철수
         </div>
         <div class="main">
-            <span>INVITATION</span>
-            <p>서로 다른 두 사람이 만나</p>
-            <p>사랑으로 하나 되는 자리에</p>
-            <p>소중한 여러분들을 초대합니다.</p>
-            <p>기쁠 때나, 슬플 때니</p>
-            <p>서로를 사랑으로 품으며</p>
-            <p>행복의 계단을 쌓아가겠습니다.</p>
-            <p>저희의 첫 시작을 함께 해주신다면</p>
-            <p>감사한 마음 깊이 간직하며 잘 살겠습니다.</p>
-
-            <div>
-            <span>2023.12.31.SUN.PM 12:30</span>
-            <span>스파르타웨딩 르탄홀</span>
-            </div>
+            <p class="title">INVITATION</p>
+            <p class="msg">
+                서로 다른 두 사람이 만나 <br/>
+                사랑으로 하나 되는 자리에 <br/>
+                소중한 여러분들을 초대합니다. <br/>
+                기쁠 때나, 슬플 때나 <br/>
+                서로를 사랑으로 품으며 <br/>
+                행복의 계단을 쌓아가겠습니다. <br/>
+                저희의 첫 시작을 함께 해주신다면 <br/>
+                감사한 마음 깊이 간직하며 잘 살겠습니다.
+            </p>
+            <p class="place">
+                2023. 12. 31. SUN. PM 12:30<br/>
+                스파르타웨딩 르탄홀
+            </p>
         </div>
         <div class="bottom">
-            <span>축하메세지를 남겨주세요</span>
-            <div>이름</div>
-                <div>메세지를 남겨주세요</div>
-            <button>메세지 남기기</button>
+            <p>축하메시지를 남겨주세요</p>
+            <input type="text" placeholder="이름">
+            <textarea placeholder= "메시지를 남겨주세요"></textarea>
+            <button>메시지 남기기</button>
         </div>
     </div>
 </body>
